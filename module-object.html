@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Object</title>
+</head>
+<body>
+    <script type="module">
+
+        import * as dika from './scripts/module-object.mjs';
+
+        console.info(dika.firstName);
+        console.info(dika.middleName);
+        console.info(dika.lastName);
+
+        dika.hello()
+
+        const person = new dika.Person()
+        
+    </script>
+</body>
+</html>
